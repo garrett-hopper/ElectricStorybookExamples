@@ -1,0 +1,1 @@
+{:lint-as {utils.storybook/defbook clj-kondo.lint-as/def-catch-all}}

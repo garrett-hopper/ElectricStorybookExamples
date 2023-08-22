@@ -1,0 +1,6 @@
+{:deps   {:aliases [:dev]}
+ :nrepl  {:port 9001}
+ :builds {:books {:target     :npm-module
+                  :devtools   {:enabled false}
+                  :output-dir "target"
+                  :entries    [user]}}}

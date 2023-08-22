@@ -1,0 +1,9 @@
+{:paths   ["src" "resources"]
+ :deps    {org.clojure/clojure            {:mvn/version "1.11.1"}
+           org.clojure/clojurescript      {:mvn/version "1.11.60"}
+           com.hyperfiddle/electric       {:mvn/version "v2-alpha-349-ge9996713"}
+           info.sunng/ring-jetty9-adapter {:mvn/version "0.22.1"
+                                           :exclusions  [org.slf4j/slf4j-api info.sunng/ring-jetty9-adapter-http3]}
+           ch.qos.logback/logback-classic {:mvn/version "1.4.11"}}
+ :aliases {:dev {:extra-deps {thheller/shadow-cljs {:mvn/version "2.25.2"}}
+                 :exec-fn    user/main}}}
